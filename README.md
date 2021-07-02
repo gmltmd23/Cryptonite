@@ -4,23 +4,25 @@
 
 - JAVA와 C++로 구현한 Windows 환경의 Endpoint 보안 솔루션 입니다.
 - 파일을 암호화 할때에는 AES-256으로 진행하여 안전하게 보호할 수 있습니다.
+- 암호화 키는 PBKDF2로 해싱된 패스워드를 사용하여 서버에 키를 저장하지 않고도 암복호화가 가능합니다.
 - 무결성 및 가용성을 보장하기 위해, 백업기능을 도입하여 언제든 서버에 백업하고 복구할 수 있습니다.
-- 사용자 간 안전하게 1:1 파일 공유가 가능합니다.
+- 사용자 간 안전하게 1:1, 그룹 파일 공유가 가능합니다.
 
 
 # Features
-  - 1:1 file share using OTP
-    - Auto encryption while transmission
-  - In real time, detects a specific folder, file encryption and automatic backup.
-    - Double click to decryption (only logged in )
-    - You can set a password for each file to protect it (PBKDF2)
-    - Backup encrypted file in server
-  - Create group, group members can sharing files (with gps authentication)
-    - Group delete, invite, withdrawal
-    - You can set a password for each file to protect it (PBKDF2)
+  - 실시간 폴더 감지 기능
+    - 보호폴더를 지정하면 그 폴더를 실시간으로 감지하고, 내부 파일들을 자동으로 암호화 및 백업을 진행해줍니다.
+  - Natural Decryption 기능 (Only Logged In)
+    - 암호화 되었던 파일을 복호화하려면 다시 패스워드를 입력하실 필요가 없습니다.
+    - 암호화 된 파일을 그저 더블클릭만 하시면 그대로 사용하실 수 있습니다. 
+    - 복호화 된 파일의 작업을 마치시면 갱신된 내용이 저장되고 자동으로 암호화/백업이 진행됩니다.
+  - 1:1 / 그룹 및 그룹원간 파일공유
+    - 사용자 간 안전하게 1:1 파일 공유가 가능합니다.
+    - 물론 그룹을 생성하여 그룹원들간에도 안전하게 파일 공유가 가능합니다.
+    - 이 역시 PBKDF2와 AES-256 기반으로 안전하게 암호화가 진행 됩니다.
   - USB Protection
-    - Create Encrypted Volume in USB using password
-      - Mount, Unmount
+    - 패스워드를 사용하여 USB에 암호화된 볼륨을 생성할 수 있습니다.
+      - 마운트, 언마운트
 
 # Demo
   - https://youtu.be/cCuC7mnV8eU
