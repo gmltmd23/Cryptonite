@@ -1,5 +1,5 @@
 # Cryptonite
-This is personal & group information security program
+JAVA와 C++로 구현한 Windows 환경의 Endpoint 보안 솔루션 입니다.
 
 ![Cryptonite](https://github.com/INJAE/Cryptonite/blob/master/Cryptonite.png?raw=true)
 
