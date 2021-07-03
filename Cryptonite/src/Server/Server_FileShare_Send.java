@@ -28,7 +28,6 @@ public class Server_FileShare_Send extends Server_Funtion
 {
 	public Server_FileShare_Send(Server_Client_Activity activity) {
 		super(activity);
-		// TODO �ڵ� ������ ������ ����
 	}
 
 	// OTP Instance
