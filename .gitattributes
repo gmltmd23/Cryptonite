@@ -1,1 +1,2 @@
-AndroidCryptonite/* linguist-vendored
+*.c linguist-detectable=false
+*.cs linguist-detectable=false
